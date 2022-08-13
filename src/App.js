@@ -1,23 +1,25 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from
-  "react-router-dom";
-import Nav from "./Components/Nav/Nav";
-import HomePage from "./Pages/HomePage";
-import ProjectPage from "./Pages/ProjectPage";
-import "./App.css";
+import './App.css';
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Nav from './Components/Nav';
+// Import pages
+import HomePage from './Pages/HomePage'
+import ProjectPage from './Pages/ProjectPage'
+import LoginPage from './Pages/LoginPage'
 
 function App() {
   return (
     <Router>
-      <div>
+      <div id="project-list">
         <Nav />
-
         <Routes>
           <Route exact path="/" element={<HomePage />} />
-          <Route path="/ProjectPage" element={<ProjectPage />} />
+          <Route path="/project" element={<ProjectPage />} />
+          <Route path="/login" element={<LoginPage />} />
         </Routes>
-      </div >
-    </Router >
+      </div>
+    </Router>
   );
 }
+
 export default App;

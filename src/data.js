@@ -4,7 +4,7 @@ export const allProjects = [
         title: "Project One",
         description: "The first project.",
         goal: 150,
-        image: "https://via.placeholder.com/300.jpg",
+        image: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/little-cute-maltipoo-puppy-royalty-free-image-1652926025.jpg?crop=0.444xw:1.00xh;0.129xw,0&resize=980:*",
         is_open: false,
         date_created: "2020-03-20T14:22:23.382748Z",
         owner: 1,

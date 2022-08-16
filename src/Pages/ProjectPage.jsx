@@ -8,7 +8,7 @@ function ProjectPage() {
 
     useEffect(() => {
         console.log(process.env.REACT_APP_API_URL)
-        fetch(`${process.env.REACT_APP_API_URL}projects / ${id}`)
+        fetch(`${process.env.REACT_APP_API_URL}projects/${id}`)
             .then((results) =>
                 results.json()
             )

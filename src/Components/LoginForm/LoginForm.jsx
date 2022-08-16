@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
+import React, { useState } from "react"
+import { useNavigate } from "react-router-dom"
 
 function LoginForm() {
     const [credentials, setCredentials] = useState({
         username: "",
         password: "",
     });
-    const history = useHistory();
+    const navigate = useNavigate();
 
     const handleChange = (e) => {
         const { id, value } = e.target;
@@ -31,16 +31,14 @@ function LoginForm() {
     };
 
     const handleSubmit = (e) => {
-        e.preventDefault();
+        e.preventDefault()
         if (credentials.username && credentials.password) {
             postData().then((response) => {
-                window.localStorage.setItem("token", response.token);
-                history.push("/");
+                window.localStorage.setItem('token', response.token);
+                navigate('/');
             });
         }
     };
-
-
 
     return (
         <form>
@@ -66,4 +64,5 @@ function LoginForm() {
             </button>
         </form>);
 }
+
 export default LoginForm;

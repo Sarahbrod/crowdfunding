@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import "./ProjectCard.css";
+import "./styles.css";
 
 const ProjectCard = (props) => {
     const { project } = props;

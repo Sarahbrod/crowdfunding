@@ -56,8 +56,9 @@ function LoginForm() {
                 <input
                     type="password"
                     id="password"
-                    placeholder="Password" />
-                onChange={handleChange}
+                    placeholder="Password"
+                    onChange={handleChange}
+                />
             </div>
             <button type="submit" onClick={handleSubmit}>
                 Login

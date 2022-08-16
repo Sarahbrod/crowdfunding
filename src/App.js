@@ -1,13 +1,13 @@
 import './App.css';
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Nav from './Components/Nav';
+import Nav from './components/Nav';
 
 // Import pages
-import HomePage from './Pages/HomePage'
-import ProjectPage from './Pages/ProjectPage'
-import AboutPage from './Pages/AboutPage'
-import LoginPage from './Pages/LoginPage'
+import HomePage from './pages/HomePage'
+import ProjectPage from './pages/ProjectPage'
+import AboutPage from './pages/AboutPage'
+import LoginPage from './pages/LoginPage'
 
 function App() {
   return (

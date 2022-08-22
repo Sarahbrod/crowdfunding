@@ -12,8 +12,10 @@ import LoginPage from './pages/LoginPage'
 function App() {
   return (
     <Router>
-      <Nav />
-      <div id="project-list">
+      <div>
+        <Nav />
+      </div>
+      <div>
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route path="/project/:id" element={<ProjectPage />} />

@@ -1,29 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import ProjectCard from '../components/projectCard';
+import HeroSection from '../components/HeroSection';
 
-const HomePage = () => {
-    const [projectList, setProjectList] = useState([]);
+
+< HeroSection />
+
+function HomePage() {
+    const [projectData, updateProjectData] = useState([])
 
     useEffect(() => {
-        fetch(`${process.env.REACT_APP_API_URL}projects`)
-            .then((results) => {
-                return results.json();
-            })
-            .catch(err => {
-                console.log("error is: ", err)
-            })
-            .then((data) => {
-                setProjectList(data);
-            });
-    }, []);
+        fetch(`${process.env.REACT_APP_API_URL}projects/`)
+            .then(res => res.json())
+            .then(data => //{data.filter{projectData.is_open}}
+                updateProjectData(data))
+
+    }, [])
 
     return (
         <div id='project-list'>
-            {projectList.map((projectData, key) => {
-                return <ProjectCard key={key} project={projectData} />
+            {projectData.map((project, key) => {
+                return <ProjectCard key={key} project={project} />;
             })}
         </div>
-    )
+    );
 }
 
 export default HomePage

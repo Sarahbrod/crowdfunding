@@ -3,11 +3,10 @@
   grid-template-columns: 30% 30% 30%;
   column-gap: 10px;
   row-gap: 10px;
-  border: red;
 }
 
 nav {
-  color: rgb(29, 29, 29);
+  color: rgb(183, 25, 25);
   text-decoration: none;
   display: flex;
   justify-content: space-between;

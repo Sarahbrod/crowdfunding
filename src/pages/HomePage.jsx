@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ProjectCard from '../components/projectCard';
-import HeroSection from '../components/HeroSection';
 
 
-< HeroSection />
 
 function HomePage() {
     const [projectData, updateProjectData] = useState([])

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ProjectCard from '../components/projectCard';
-
+import hero from '../components/hero';
 
 
 function HomePage() {
@@ -15,11 +15,13 @@ function HomePage() {
     }, [])
 
     return (
+        <div><hero /></div>
         <div id='project-list'>
             {projectData.map((project, key) => {
                 return <ProjectCard key={key} project={project} />;
             })}
         </div>
+
     );
 }
 

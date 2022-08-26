@@ -1,18 +1,33 @@
 .hero {
-    height: 300px;
+    display: flex;
+    height: 400px;
+    align-items: centre;
+    padding: 100px 124px 100px 124px;
 }
 
 .title {
-    border: 1px solid red;
-    color: red;
+    color: #242222;
+    font-weight: 500;
+    font-size: 100px;
+    flex: left;
+    padding: 10px 20px 0px 0px;
+
+}
+
+.subtitle {
+    font-size: 24px;
+    font-weight: 300;
+    color: rgb(69, 69, 69);
+    padding: 0 40px 0 0;
 }
 
 .hero-image {
-    height: 300px;
+    flex: right;
+    height: 400px;
+    padding: 0 0px 0px 60px;
 }
 
 .img {
-    height: 300px;
-    width: 100px;
-    display: right;
+    flex: right;
+    height: 100%;
 }

@@ -1,6 +1,7 @@
 .project-card {
     width: 100%;
     border: 1px solid #242222;
+    text-decoration: none;
 
 }
 
@@ -8,4 +9,8 @@
     width: 100%;
     height: 300px;
     object-fit: cover;
+}
+
+h3 {
+    text-decoration: none;
 }

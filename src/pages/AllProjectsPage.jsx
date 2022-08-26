@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ProjectCard from '../components/projectCard';
-import Hero from '../components/Hero/Hero';
 
-function HomePage() {
+function AllProjectsPage() {
     const [projectData, updateProjectData] = useState([])
 
     useEffect(() => {
@@ -14,18 +13,13 @@ function HomePage() {
     }, [])
 
     return (
-        <>
-            <Hero />
-            <h2 className="projectlist-title"> Latest Projects</h2>
-            <div id='project-list'>
-                {projectData.map((project, key) => {
-                    return <ProjectCard key={key} project={project} />;
-                })}
-            </div>
-        </>
+        <div id='project-list'>
+            {projectData.map((project, key) => {
+                return <ProjectCard key={key} project={project} />;
+            })}
+        </div>
 
     );
 }
 
-export default HomePage;
-
+export default AllProjectsPage

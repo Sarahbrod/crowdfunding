@@ -1,6 +1,6 @@
 import React from 'react'
 
-const AboutPage = () => {
+const CreatePage = () => {
     return (
         <div>
             <h1>I'm a silly goose</h1>
@@ -8,4 +8,4 @@ const AboutPage = () => {
     )
 }
 
-export default AboutPage
+export default CreatePage

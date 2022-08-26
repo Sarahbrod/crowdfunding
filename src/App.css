@@ -1,3 +1,10 @@
+.projectlist-title {
+  font-size: 32px;
+  padding: 0 130px;
+  font-weight: 400;
+
+}
+
 #project-list {
   grid-column-gap: 30px;
   grid-row-gap: 20px;
@@ -23,6 +30,7 @@
 
 nav {
   color: #242222;
+  font-size: 40;
   text-decoration: none;
   display: flex;
   justify-content: space-between;

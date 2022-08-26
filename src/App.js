@@ -6,7 +6,7 @@ import Nav from './components/nav';
 // Import pages
 import HomePage from './pages/HomePage'
 import ProjectPage from './pages/ProjectPage'
-import AboutPage from './pages/AboutPage'
+import AllProjectsPage from './pages/AllProjectsPage'
 import LoginPage from './pages/LoginPage'
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route path="/project/:id" element={<ProjectPage />} />
-          <Route path="/about" element={<AboutPage />} />
+          <Route path="/allprojects" element={<AllProjectsPage />} />
           <Route path="/login" element={<LoginPage />} />
         </Routes>
       </div>

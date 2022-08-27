@@ -5,7 +5,7 @@ function Hero() {
     return (
         <div className="hero">
             <div className="title">
-                Invest in the future.
+                Invest in the <span className="underline"> future.</span>
                 <h3 className="subtitle">Fundley is an online community where you can either donate to a world-changing startup or start a fund of your own. </h3>
             </div>
             <div className="hero-image">

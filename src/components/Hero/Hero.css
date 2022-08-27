@@ -7,6 +7,7 @@
 
 .title {
     color: #242222;
+    font-family: 'Roboto';
     font-weight: 500;
     font-size: 100px;
     flex: left;

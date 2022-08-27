@@ -7,7 +7,7 @@ function AllProjectsPage() {
     useEffect(() => {
         fetch(`${process.env.REACT_APP_API_URL}projects/`)
             .then(res => res.json())
-            .then(data => //{data.filter{projectData.is_open}}
+            .then(data =>
                 updateProjectData(data))
 
     }, [])

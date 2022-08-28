@@ -8,6 +8,7 @@ const SignupForm = () => {
     const navigate = useNavigate()
     const [credentials, setCredentials] = useState({
         username: "",
+        email: "",
         password: "",
     });
 
@@ -35,7 +36,7 @@ const SignupForm = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        if (credentials.username && credentials.password) {
+        if (credentials.email && credentials.password) {
             postData().then((response) => {
                 window.localStorage.setItem('token', response.token);
                 navigate("/");
@@ -59,6 +60,16 @@ const SignupForm = () => {
                     onChange={handleChange}
                 />
             </div>
+            <div>
+                <label htmlFor="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    className="email"
+                    placeholder="Email"
+                    onChange={handleChange}
+                />
+            </div>
             <div className="password-object">
                 <label htmlFor="password">Password:</label>
                 <input
@@ -70,11 +81,11 @@ const SignupForm = () => {
                 />
             </div>
             <button type="submit" className="btn" onClick={handleSubmit}>
-                Login
+                Sign up
             </button>
             <div className="sign up">
-                If you don't have an account <span className="sign.up-here"
-                >Sign up here.</span>
+                If you already have an account <span className="sign.up-here"
+                >Login here.</span>
             </div>
         </form>
     );

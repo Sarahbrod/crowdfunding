@@ -4,6 +4,7 @@
   font-size: 32px;
   padding: 0 130px;
   font-weight: 400;
+  text-align: left;
 
 }
 
@@ -70,4 +71,24 @@ nav a {
 
 .nav li.active {
   background-color: rgb(66, 66, 66);
+}
+
+.title {
+  text-align: left;
+}
+
+.h3 {
+  text-align: left;
+}
+
+.h2 {
+  text-align: left;
+}
+
+.h4 {
+  text-align: left;
+}
+
+.description {
+  text-align: left;
 }

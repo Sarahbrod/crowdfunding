@@ -8,9 +8,6 @@ const Nav = () => {
             {/* {window.localStorage.getItem('token') ==} */}
             <ul>
                 <li>
-                    <Link to="/AllProjectsPage">Projects</Link>
-                </li>
-                <li>
                     <Link to="/Create">Create</Link>
                 </li>
                 <li>

@@ -30,23 +30,10 @@ h2 {
     border-radius: 4px;
 }
 
-.btn {
-    background: #736ced;
-    width: 200px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    color: white;
-    border-radius: 4px;
-    border: #736ced 1px solid;
-
-    margin-top: 20px;
-    margin-bottom: 5px;
-    align-items: center;
-    margin-left: 16px;
-    font-weight: 800;
-    font-size: 0.8em;
+.blurb {
+    color: #58676b;
 }
 
-.btn:hover {
-    background: #d4c1ec;
+.img2 {
+    height: 100px;
 }

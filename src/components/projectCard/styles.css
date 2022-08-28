@@ -11,11 +11,3 @@
     height: 300px;
     object-fit: cover;
 }
-
-.project.title {
-    text-decoration-line: none;
-    text-align: left;
-    padding: 0 0 0 24px;
-    color: #242222;
-    text-align: left;
-}

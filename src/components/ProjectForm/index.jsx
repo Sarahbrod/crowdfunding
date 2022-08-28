@@ -47,7 +47,7 @@ const ProjectForm = () => {
             <div>
                 <h2>Lodge your Startup with Fundley</h2>
             </div>
-            <div>
+            <div className="blurb">
                 <p>fill out</p>
             </div>
             <div>
@@ -87,7 +87,7 @@ const ProjectForm = () => {
             </div>
 
             <button type="submit" className="btn" onClick={handleSubmit}>
-                Create Project
+                Submit Project
             </button>
         </form>
     );

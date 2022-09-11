@@ -1,0 +1,117 @@
+nav {
+    color: #242222;
+    background-color: #F3F5F5;
+    text-decoration: none;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: centre;
+    display: flex;
+    align-items: center;
+    padding: 40px 120px 40px 120px;
+}
+
+.site-title {
+    justify-content: left;
+    font-weight: 600;
+    text-decoration: none;
+    color: #242222;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.button {
+    justify-content: inline;
+    color: var(--color-primary);
+    font-family: var(--regular);
+    text-decoration: none;
+    border-radius: 6px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.button:hover {
+    color: rgb(27, 42, 27);
+}
+
+.left-menu {
+    padding-left: 1rem;
+}
+
+.right-menu {
+    padding-right: 1rem;
+    ;
+}
+
+.logo {
+    margin: 0;
+    max-width: 60%;
+    height: 60%;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 988px) {
+    .site-title {
+        display: flex;
+        position: absolute;
+        top: 15px;
+        left: 25px;
+    }
+
+    .right-menu {
+        display: none;
+
+    }
+
+    .right-menu-mobile {
+        position: absolute;
+        flex-direction: row;
+        align-items: center;
+        background-color: #F3F5F5;
+        padding: 10px;
+        left: 0;
+        top: 75px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .buttons {
+        color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        padding: 32px;
+        width: 100%;
+        transition: all 0.5s ease;
+        display: table;
+        font-size: 16px;
+
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        background-color: #F3F5F5;
+        position: absolute;
+        font-size: 26px;
+        color: #242222;
+        border: none;
+        outline: none;
+        top: 22px;
+        right: 25px;
+    }
+
+}

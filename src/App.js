@@ -4,11 +4,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Nav from './components/nav';
 
 // Import pages
-import HomePage from './pages/HomePage'
-import ProjectPage from './pages/ProjectPage'
-import SignUpPage from './pages/SignUpPage'
-import LoginPage from './pages/LoginPage'
-import CreateRequestPage from './pages/CreateRequestPage'
+import HomePage from './pages/HomePage';
+import ProjectPage from './pages/ProjectPage';
+import SignUpPage from './pages/SignUpPage';
+import LoginPage from './pages/LoginPage';
+import CreateRequestPage from './pages/CreateRequestPage';
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/create" element={<CreateRequestPage />} />
         </Routes>
       </div>
+      <Footer />
     </Router>
   );
 }

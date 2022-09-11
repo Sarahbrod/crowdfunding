@@ -5,7 +5,6 @@ const Nav = () => {
     return (
         <nav>
             <Link to="/" className="site-title">FUNDLEY</Link>
-            {/* {window.localStorage.getItem('token') ==} */}
             <ul>
                 <li>
                     <Link to="/Create">Create</Link>

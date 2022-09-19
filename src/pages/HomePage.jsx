@@ -16,7 +16,7 @@ function HomePage() {
     return (
         <>
             <Hero />
-            <h2 className="projectlist-title"> Latest Projects</h2>
+            <h2 className="projectlist-title"> All Projects</h2>
             <div id='project-list'>
                 {projectData.map((project, key) => {
                     return <ProjectCard key={key} project={project} />;

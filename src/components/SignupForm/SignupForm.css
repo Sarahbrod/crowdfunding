@@ -6,98 +6,63 @@ body {
     margin: 20px 0px 20px 0px;
 }
 
-p {
-    font-size: 12px;
+.blurb {
+    font-size: 18px;
     text-decoration: none;
-    color: #ffffff;
+    color: rgb(91, 91, 91);
+    margin-top: 0;
 }
+
+input,
+label {
+    display: block;
+}
+
 
 h2 {
     font-size: 1.5em;
-    color: #525252;
+    color: #1a1a1a;
+    margin-bottom: 8px;
 }
 
-.password-object {
-    padding: 10px;
-}
-
-.form-box {
-    background: white;
-    width: 600px;
-    height: 400px;
-    margin: 0 auto 0 auto;
-    padding: 40px 0px 100px 0px;
-}
-
-.label {
-    padding: 10px 10px 0 0 0;
-}
-
-.username {
-    background: #ecf0f1;
+.username,
+.password,
+.email {
+    background: #ffffff;
     border: #ccc 1px solid;
-    padding: 8px;
-    width: 250px;
-    color: #333333;
-    margin-top: 10px;
+    padding: 10px;
+    width: 376px;
     font-size: 1em;
-    border: 0;
-    outline: 0;
-    background: transparent;
-    border-bottom: 1px solid black;
+    margin: 10px;
 }
 
 .email {
-    background: #ecf0f1;
-    border: #ccc 1px solid;
-    padding: 8px;
-    width: 250px;
-    color: #333333;
-    margin-top: 10px;
-    font-size: 1em;
-    border: 0;
-    outline: 0;
-    background: transparent;
-    border-bottom: 1px solid black;
-}
-
-.password {
-    border-radius: 4px;
-    background: #ecf0f1;
-    border: #ccc 1px solid;
-    padding: 8px;
-    width: 251px;
-    color: #333333;
-    font-size: 1em;
+    margin-left: 0;
+    /* width: 380px; */
 }
 
 .btn {
-    background: #434842;
-    width: 125px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    background: #091938;
+    width: 370px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     color: white;
-    border-radius: 4px;
-    border: #434842 1px solid;
-
+    border: #091938 1px solid;
     margin-top: 20px;
     margin-bottom: 5px;
-    align-items: center;
-    margin-left: 16px;
+    align-items: left;
     font-weight: 800;
     font-size: 0.8em;
 }
 
 .btn:hover {
-    background: #586a54;
+    background: #0d6c3e;
 }
 
-.sign.up {
-    font-size: 16;
-    color: rgb(50, 50, 50);
-    padding: 20px;
-}
-
-.sign.up-here {
-    font-weight: 400px;
+.form-box {
+    width: 400px;
+    border-radius: 6px;
+    margin: 0 auto 0 auto;
+    margin-bottom: 220px;
+    padding: 40px 0px 40px 0px;
 }

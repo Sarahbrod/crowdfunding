@@ -5,6 +5,7 @@
   padding: 0 130px;
   font-weight: 400;
   text-align: left;
+  color: #242222;
 }
 
 .project.title {
@@ -21,8 +22,9 @@
   display: grid;
   grid-template-columns: 35% 35% 35%;
   justify-content: center;
-  margin: 0px 190px 60px 190px;
+  margin: 0px 190px 120px 190px;
   row-gap: 20px;
+  color: #242222;
 }
 
 @media (max-width: 576px) {
@@ -61,14 +63,17 @@ nav {
 
 .h3 {
   text-align: left;
+  color: #242222;
 }
 
 .h2 {
   text-align: left;
+  color: #242222;
 }
 
 .h4 {
   text-align: left;
+  color: #242222;
 }
 
 .description {

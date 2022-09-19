@@ -1,4 +1,4 @@
-.hero {
+/* .hero {
     display: flex;
     height: 400px;
     align-items: centre;
@@ -29,9 +29,77 @@
     flex: right;
     height: 400px;
     padding: 0 0px 0px 60px;
-}
+} */
 
-.img {
+/* .img {
     flex: right;
     height: 100%;
+} */
+
+
+
+.hero-banner {
+    height: 35rem;
+    background-image: url(https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1438&q=80);
+    background-color: rgba(0, 0, 0, 0.588);
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    background-blend-mode: multiply;
+    margin: 0;
+    margin-bottom: 40px;
+    display: block;
+    text-align: left;
 }
+
+
+.title {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 80px;
+    text-align: center;
+    flex: left;
+    padding: 140px 120px 0px 210px;
+    margin: 0;
+
+}
+
+.sub-title {
+    font-size: 24px;
+    font-weight: 250;
+    color: rgb(255, 255, 255);
+    padding: 12px 200px 12px 200px;
+    margin: 0;
+    text-align: center;
+    display: flex;
+}
+
+.singUp-button {
+    font-size: 1.5rem;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    padding: 8px 10px 8px 10px;
+    display: inline-block;
+    border: 2px solid rgb(255, 255, 255);
+    margin-top: 20px;
+    margin-left: 664px;
+
+}
+
+.singUp-button:hover {
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+
+
+/* media queries start */
+
+/* smartphone view: 1 tile */
+@media screen and (max-width: 480px) {
+    .hero-image {
+        display: none;
+    }
+}
+
+/* media queries end */

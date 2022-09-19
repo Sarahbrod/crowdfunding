@@ -48,7 +48,7 @@ const ProjectForm = () => {
                 <h2>Lodge your Startup with Fundley</h2>
             </div>
             <div className="blurb">
-                <p>fill out</p>
+                <p className="blurb">Start growing your idea by submitting your project.</p>
             </div>
             <div>
                 <input className="project-field"

@@ -51,29 +51,33 @@ const ProjectForm = () => {
                 <p className="blurb">Start growing your idea by submitting your project.</p>
             </div>
             <div>
-                <input className="project-field"
+                <input
                     type="text"
+                    className="project-field"
                     placeholder="Enter Project Title"
                     onChange={handleChange}
                 />
             </div>
             <div>
-                <input className="project-field"
+                <input
                     type="textarea"
+                    className="project-field"
                     placeholder="Tell us about your Project"
                     onChange={handleChange}
                 />
             </div>
-            <div>
-                <input className="project-field"
+            <div >
+                <input
                     type="url"
+                    className="project-field"
                     placeholder="Image URL"
                     onChange={handleChange}
                 />
             </div>
             <div>
-                <input className="project-field"
+                <input
                     type="date"
+                    className="project-field"
                     placeholder="DD/MM/YYYY"
                     onChange={handleChange}
                 />
@@ -89,7 +93,7 @@ const ProjectForm = () => {
             <button type="submit" className="btn" onClick={handleSubmit}>
                 Submit Project
             </button>
-        </form>
+        </form >
     );
 }
 export default ProjectForm;

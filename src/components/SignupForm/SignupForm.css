@@ -13,11 +13,6 @@ body {
     margin-top: 0;
 }
 
-input,
-label {
-    display: block;
-}
-
 
 h2 {
     font-size: 1.5em;
@@ -34,14 +29,15 @@ h2 {
     width: 376px;
     font-size: 1em;
     margin: 10px;
+    display: block;
 }
 
 .email {
     margin-left: 0;
-    /* width: 380px; */
+    width: 376px;
 }
 
-.btn {
+/* .btn {
     background: #091938;
     width: 370px;
     padding-top: 12px;
@@ -57,7 +53,7 @@ h2 {
 
 .btn:hover {
     background: #0d6c3e;
-}
+} */
 
 .form-box {
     width: 400px;

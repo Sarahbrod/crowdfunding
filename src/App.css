@@ -79,3 +79,32 @@ nav {
 .description {
   text-align: left;
 }
+
+.project-wrapper {
+  width: 50%;
+  text-align: left;
+  padding-left: 22%;
+  margin-bottom: 100px;
+}
+
+.project-img {
+  width: 800px;
+}
+
+.pledge-button {
+  background: #434842;
+  width: 150px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  border: #434842 1px solid;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: left;
+  font-weight: 800;
+  font-size: 0.8em;
+}
+
+.pledge-button:hover {
+  background: #62725d;
+}

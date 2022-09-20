@@ -5,6 +5,7 @@ import Nav from './components/Nav/Nav';
 
 // Import pages
 import HomePage from './pages/HomePage';
+import AccountPage from './pages/AccountPage';
 import ProjectPage from './pages/ProjectPage';
 import SignUpPage from './pages/SignUpPage';
 import LoginPage from './pages/LoginPage';
@@ -25,6 +26,7 @@ function App() {
           <Route path="/signup" element={<SignUpPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/create" element={<CreateRequestPage />} />
+          <Route path="/account" element={<AccountPage />} />
         </Routes>
       </div>
       <Footer />

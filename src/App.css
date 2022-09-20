@@ -108,3 +108,12 @@ nav {
 .pledge-button:hover {
   background: #62725d;
 }
+
+.profile {
+  height: 500px;
+}
+
+#user-title {
+  color: #242222;
+  text-align: center;
+}

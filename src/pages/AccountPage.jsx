@@ -10,22 +10,22 @@ function AccountPage() {
     useEffect(() => {
         fetch(`${process.env.REACT_APP_API_URL}users/${username}`)
             .then(res => res.json())
-        if (window.localStorage.getItem('token')) {
-            return (
+            .then(data => {
+                if (username === data.username) {
+                    setUserData(data);
+                }
+            })
+            .catch(err => { console.log(err) })
+    }, [username])
 
-                <div>
-                    <h1 id="user-title">Welcome, {userData.username}</h1>
+    return (
+        <div className="profile">
+            <h1 id="user-title">Welcome, {userData.username}</h1>
 
-                    <div>
-                        <Link className="button" to="/grants">View More Scholarships</Link>
-                    </div>
-
-                </div>
-            )
-        }
-    }
+        </div>
     )
 }
+
 
 
 export default AccountPage;

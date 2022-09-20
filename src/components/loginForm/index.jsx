@@ -41,12 +41,12 @@ function LoginForm() {
                         console.log(data.status)
                         localStorage.setItem('username', credentials.username);
                         console.log('logged in', localStorage.getItem('username'));
-                        navigate("/users/:id");
+                        navigate("/");
                     }
-                    // else {
-                    //     alert("Username or Password is incorrect. Please try again.")
-                    //     console.log("log-in failed")
-                    // }
+                    else {
+                        alert("Username or Password is incorrect. Please try again.")
+                        console.log("log-in failed")
+                    }
                 })
                 .catch(err => {
 

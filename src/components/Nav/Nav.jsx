@@ -38,10 +38,10 @@ const Nav = () => {
                 <Link className="button" to="/Create">New Project</Link>
                 {loggedIn ? (
                     <Link className="button" to="/" onClick={logOut}>Logout</Link>)
-                    : (<Link className="button" to="/login">Log in</Link>)}
+                    : (<Link className="button" to="/login">Log In</Link>)}
                 {loggedIn ? (
                     <Link className="button" to="/Account">Account</Link>)
-                    : (<Link className="button" to="/Signup">Sign up</Link>)}
+                    : (<Link className="button" to="/Signup">Sign Up</Link>)}
             </div>
             <button className="mobile-menu-icon"
                 onClick={() => setIsMobile(!isMobile)}>
